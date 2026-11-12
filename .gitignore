@@ -20,6 +20,12 @@
 # production
 /build
 
+#Impeccable
+/.impeccable
+
+#Agents
+*.md
+
 # misc
 .DS_Store
 *.pem

@@ -1,26 +1,125 @@
 @import "tailwindcss";
 
+/* FALO Enterprise — "The Pattern Room"
+   Tissue white, lavender cutting mat, chalk gray, violet ink. */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --tissue: #ffffff;
+  --tissue-soft: #f6f5fa;
+  --mat: #bba9f5;
+  --mat-deep: #a996ef;
+  --mat-line: rgb(58 40 140 / 0.13);
+  --mat-line-strong: rgb(58 40 140 / 0.26);
+  --violet: #6e5bc4;
+  --violet-ink: #33267a;
+  --night: #1f1840;
+  --ink: #1c1830;
+  --ink-2: #4a4660;
+  --ink-3: #6d6a80;
+  --chalk: #8e8f99;
+  --chalk-light: #c9cad1;
+  --steel: #a9aab2;
+  --steel-deep: #8a8b95;
+  --rule: rgb(28 24 48 / 0.12);
+  --pass: #2f7a5b;
+  --flag: #b4415b;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-tissue: var(--tissue);
+  --color-tissue-soft: var(--tissue-soft);
+  --color-mat: var(--mat);
+  --color-mat-deep: var(--mat-deep);
+  --color-violet: var(--violet);
+  --color-violet-ink: var(--violet-ink);
+  --color-night: var(--night);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-chalk: var(--chalk);
+  --color-chalk-light: var(--chalk-light);
+  --color-steel: var(--steel);
+  --color-steel-deep: var(--steel-deep);
+  --color-pass: var(--pass);
+  --color-flag: var(--flag);
+  --font-display: var(--font-bricolage);
+  --font-sans: var(--font-bricolage);
+  --font-mono: var(--font-martian);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
+  scrollbar-color: var(--mat-deep) var(--tissue-soft);
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--tissue);
+  color: var(--ink);
+  font-family: var(--font-bricolage), system-ui, sans-serif;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+::selection { background: var(--mat); color: var(--violet-ink); }
+:focus-visible {
+  outline: 2px dashed var(--violet);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+a { text-underline-offset: 0.22em; text-decoration-thickness: 1px; }
+input, textarea { caret-color: var(--violet); }
+
+::-webkit-scrollbar { width: 12px; }
+::-webkit-scrollbar-track { background: var(--tissue-soft); }
+::-webkit-scrollbar-thumb { background: var(--mat-deep); border: 3px solid var(--tissue-soft); border-radius: 8px; }
+
+/* The self-healing cutting mat: 5mm grid with 25mm major lines */
+.mat {
+  background-color: var(--mat);
+  background-image:
+    linear-gradient(var(--mat-line-strong) 1px, transparent 1px),
+    linear-gradient(90deg, var(--mat-line-strong) 1px, transparent 1px),
+    linear-gradient(var(--mat-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--mat-line) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+  background-position: -1px -1px;
+}
+.mat-night {
+  background-color: var(--night);
+  background-image:
+    linear-gradient(rgb(187 169 245 / 0.16) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(187 169 245 / 0.16) 1px, transparent 1px),
+    linear-gradient(rgb(187 169 245 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(187 169 245 / 0.06) 1px, transparent 1px);
+  background-size: 120px 120px, 120px 120px, 24px 24px, 24px 24px;
+}
+.mat-steel {
+  background-color: var(--steel);
+  background-image:
+    linear-gradient(rgb(28 24 48 / 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(28 24 48 / 0.1) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Tissue paper sheet */
+.tissue {
+  background: var(--tissue);
+  box-shadow:
+    0 1px 1px rgb(31 24 64 / 0.06),
+    0 12px 28px -8px rgb(31 24 64 / 0.22),
+    0 40px 80px -30px rgb(31 24 64 / 0.28);
+}
+
+/* Measurements: tabular numerals everywhere they appear */
+.measure {
+  font-family: var(--font-martian), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+.balance { text-wrap: balance; }
+.pretty { text-wrap: pretty; }
