@@ -24,6 +24,8 @@
 /.impeccable
 
 #Agents
+AGENTS.md
+PRODUCT.md
 *.md
 
 # misc
