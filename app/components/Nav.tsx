@@ -52,7 +52,7 @@ export function Nav() {
           href={APP_URL}
           className="group inline-flex shrink-0 items-center gap-2 rounded-full bg-ink px-4 py-2 whitespace-nowrap text-[14px] font-semibold text-tissue transition-colors hover:bg-violet-ink"
         >
-          Open ResuMax
+          Open Resumax AI
           <Arrow size={15} className="transition-transform duration-300 group-hover:translate-x-0.5" />
         </a>
       </nav>

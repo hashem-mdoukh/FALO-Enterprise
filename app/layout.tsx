@@ -18,12 +18,12 @@ const martian = Martian_Mono({
 export const metadata: Metadata = {
   title: "FALO Enterprise — Software made to measure",
   description:
-    "FALO Enterprise is a product studio. Its first piece, ResuMax, tailors one profile into resumes that fit US, Europass, GCC and academic standards — checked line by line, never padded, never invented.",
+    "FALO Enterprise is a product studio. Its first piece, Resumax AI, tailors one profile into resumes that fit US, Europass, GCC and academic standards — checked line by line, never padded, never invented.",
   icons: { icon: "/falo-mark.svg" },
   openGraph: {
     title: "FALO Enterprise — Software made to measure",
     description:
-      "Meet ResuMax: one profile, cut to fit every region you apply to.",
+      "Meet Resumax AI: one profile, cut to fit every region you apply to.",
     type: "website",
   },
 };

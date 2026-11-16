@@ -30,7 +30,7 @@ function Heading({ children }: { children: React.ReactNode }) {
   );
 }
 
-/** The ResuMax sheet, re-cut per regional convention. Sample data. */
+/** The Resumax AI sheet, re-cut per regional convention. Sample data. */
 export function RegionResume() {
   const [active, setActive] = useState<RegionId>("us");
   const region = REGIONS.find((r) => r.id === active)!;

@@ -4,7 +4,7 @@ export const TEMPLATES_URL = "https://resumax-frontend.fly.dev/en/templates";
 
 export type RegionId = "us" | "europass" | "gcc" | "academic";
 
-/* Verified from the ResuMax multi-region table. */
+/* Verified from the Resumax AI multi-region table. */
 export const REGIONS: {
   id: RegionId;
   label: string;
@@ -27,7 +27,7 @@ export const STEPS = [
     verb: "Answer",
     count: 7,
     unit: "questions",
-    body: "Seven questions about your purpose, field, target role, education and skills. ResuMax picks the layout that fits you and fills your first draft before you type a word.",
+    body: "Seven questions about your purpose, field, target role, education and skills. Resumax AI picks the layout that fits you and fills your first draft before you type a word.",
   },
   {
     verb: "Draft",

@@ -36,7 +36,7 @@ export function Studio() {
             <div className="flex items-start justify-between gap-6">
               <div>
                 <p className="measure text-[10px] uppercase">Piece 01 · Live · v1.0</p>
-                <p className="mt-3 font-display text-[44px] leading-none font-bold tracking-[-0.03em] text-ink">ResuMax</p>
+                <p className="mt-3 font-display text-[44px] leading-none font-bold tracking-[-0.03em] text-ink">Resumax AI</p>
                 <p className="mt-4 max-w-[24rem] text-[16px] leading-[1.55] text-violet-ink">
                   The resume builder for people applying across borders: US, Europass, GCC, Asia-Pacific and academic formats built in, with native Arabic RTL.
                 </p>

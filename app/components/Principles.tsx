@@ -14,7 +14,7 @@ export function Principles() {
         <div className="grid gap-10 lg:grid-cols-[1fr_1.5fr] lg:gap-24">
           <div className="lg:sticky lg:top-28 lg:self-start">
             <h2 className="balance font-display text-[clamp(2.2rem,4.6vw,4rem)] leading-[1] font-bold tracking-[-0.035em] text-ink">
-              Five things ResuMax will never do.
+              Five things Resumax AI will never do.
             </h2>
             <p className="pretty mt-6 max-w-[26rem] text-[17px] leading-[1.6] text-ink-2">
               A good tailor never adds cloth that isn&rsquo;t there. These are product rules, not marketing lines.

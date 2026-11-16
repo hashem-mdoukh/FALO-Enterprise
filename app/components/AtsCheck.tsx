@@ -62,7 +62,7 @@ export function AtsCheck() {
             The ATS optimizer reads your resume the way screening software does. It scores it, runs a real-time keyword analysis, and lists exactly which checks pass and which need your attention.
           </p>
           <p className="pretty mt-5 max-w-[34rem] text-[15.5px] leading-[1.6] text-ink-3">
-            No tool can promise that a particular system will accept a document, and ResuMax doesn&rsquo;t. Treat the score as strong preparation, not a guarantee.
+            No tool can promise that a particular system will accept a document, and Resumax AI doesn&rsquo;t. Treat the score as strong preparation, not a guarantee.
           </p>
         </div>
 

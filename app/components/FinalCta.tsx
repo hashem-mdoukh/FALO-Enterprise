@@ -21,7 +21,7 @@ export function FinalCta() {
             Your first draft is seven questions away.
           </h2>
           <p className="pretty mt-7 max-w-[32rem] text-[18px] leading-[1.6] text-mat">
-            Answer seven questions and ResuMax writes your first draft for you. Start on the free plan and upgrade only if you need more.
+            Answer seven questions and Resumax AI writes your first draft for you. Start on the free plan and upgrade only if you need more.
           </p>
           <div className="mt-11">
             <MagneticTag href={SIGNUP_URL} label="Create your free account" note="No credit card required" tone="lavender" />

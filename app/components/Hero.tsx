@@ -84,7 +84,7 @@ export function Hero() {
                 transition={{ duration: 0.8, ease: EASE, delay: 0.75 }}
                 className="pretty mt-6 max-w-[34rem] text-[18px] leading-[1.6] text-ink-2 sm:text-[19px]"
               >
-                FALO Enterprise makes software to measure. Our first piece, <strong className="font-semibold text-ink">ResuMax</strong>,
+                FALO Enterprise makes software to measure. Our first piece, <strong className="font-semibold text-ink">Resumax AI</strong>,
                 takes the one profile you already have and tailors it to the standard of the place you&rsquo;re applying, checked line by line. It never pads and never invents.
               </motion.p>
 
@@ -96,7 +96,7 @@ export function Hero() {
                 className="mt-7 grid max-w-[34rem] grid-cols-2 border-y border-ink/15 text-[13px] sm:grid-cols-4"
               >
                 {[
-                  ["Piece", "ResuMax 1.0"],
+                  ["Piece", "Resumax AI 1.0"],
                   ["Cut from", "One profile"],
                   ["Graded to", "5 regional standards"],
                   ["Languages", "EN · AR (RTL)"],
@@ -114,7 +114,7 @@ export function Hero() {
                 transition={{ duration: 0.8, ease: EASE, delay: 1.1 }}
                 className="mt-8 flex flex-wrap items-center gap-x-8 gap-y-5"
               >
-                <MagneticTag href={SIGNUP_URL} label="Try ResuMax free" note="No credit card" />
+                <MagneticTag href={SIGNUP_URL} label="Try Resumax AI free" note="No credit card" />
                 <a href="#process" className="text-[15px] font-semibold text-violet-ink underline decoration-violet/40 hover:decoration-violet">
                   See how it&rsquo;s cut
                 </a>

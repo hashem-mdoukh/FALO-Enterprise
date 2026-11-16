@@ -4,7 +4,7 @@ const R = "https://resumax-frontend.fly.dev/en";
 
 const COLS = [
   {
-    title: "ResuMax",
+    title: "Resumax AI",
     links: [
       ["Open the app", R],
       ["Templates", `${R}/templates`],
@@ -15,8 +15,8 @@ const COLS = [
   {
     title: "Read",
     links: [
-      ["About ResuMax", `${R}/about`],
-      ["The ResuMax Journal", `${R}/blog`],
+      ["About Resumax AI", `${R}/about`],
+      ["The Resumax AI Journal", `${R}/blog`],
       ["Privacy", `${R}/privacy`],
       ["Terms", `${R}/terms-and-conditions`],
     ],
@@ -35,7 +35,7 @@ export function Footer() {
             </span>
           </div>
           <p className="mt-5 max-w-[22rem] text-[15px] leading-[1.6] text-ink-2">
-            Software made to measure. ResuMax is a FALO Enterprise product.
+            Software made to measure. Resumax AI is a FALO Enterprise product.
           </p>
         </div>
         {COLS.map((c) => (
